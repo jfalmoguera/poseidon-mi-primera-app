@@ -6,6 +6,7 @@ import { HolaMundoComponent } from './hola-mundo/hola-mundo.component';
 import { UsuarioComponent } from './usuario/usuario.component';
 import { UsuariosListComponent } from './usuarios-list/usuarios-list.component';
 import { LineaComponent } from './linea/linea.component';
+import { SumaComponent } from './suma/suma.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { LineaComponent } from './linea/linea.component';
     HolaMundoInlineComponent,
     UsuarioComponent,
     UsuariosListComponent,
-    LineaComponent
+    LineaComponent,
+    SumaComponent
   ],
   imports: [
     BrowserModule
