@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  
+  nombre = 'Juan';
+  apellidos = "Sanchez";
+  email = 'juan.sanchez@codehouse.com'
   title = 'mi-primera-app';
 }

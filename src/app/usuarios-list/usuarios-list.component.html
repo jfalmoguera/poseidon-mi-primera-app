@@ -1,0 +1,16 @@
+<div class="container">
+    <h1>Listado de usuarios como UL</h1>
+    <ul>
+        <li *ngFor="let item of usuarios">
+            {{item.nombre}} {{item.apellidos}} {{item.email}}
+        </li>
+    </ul>
+
+    <hr>
+
+    <h1>
+        Listado de usuarios como tarjetas
+    </h1>
+    <app-usuario [nombre]="item.nombre" [apellidos]="item.apellidos" [email]="item.email" *ngFor="let item of usuarios"></app-usuario>
+</div>
+

@@ -1,0 +1,11 @@
+p{
+    span{
+        color: black !important;
+        &.titulo{           
+            font-weight: bold;
+        }
+        &.valor{
+            text-transform: uppercase;
+        }
+    }
+}
