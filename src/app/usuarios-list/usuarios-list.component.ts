@@ -8,6 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class UsuariosListComponent implements OnInit {
 
   usuarios: any[];
+  nombreUsuarioSeleccionado = '';
 
   constructor() {
     this.usuarios = [
@@ -29,6 +30,11 @@ export class UsuariosListComponent implements OnInit {
   }
 
   ngOnInit(): void {
+  }
+
+  mostrarInfo(nombre: string) {
+    console.log('mostrarInfo');
+    this.nombreUsuarioSeleccionado = nombre;
   }
 
 }
