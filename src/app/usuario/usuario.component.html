@@ -1,6 +1,6 @@
 <div class="container">
-    <app-linea [titulo]="'Nombre'" [valor]="nombre" ></app-linea> 
-    <app-linea [titulo]="'Apellidos'" [valor]="apellidos" ></app-linea> 
-    <app-linea [titulo]="'Email'" [valor]="email" ></app-linea> 
-   <button (click)="infoClick()">Info</button>
+    <app-linea [titulo]="'Nombre'" [valor]="usuario?.nombre || ''"></app-linea>
+    <app-linea [titulo]="'Apellidos'" [valor]="usuario?.apellidos || ''"></app-linea>
+    <app-linea [titulo]="'Email'" [valor]="usuario?.email || ''"></app-linea>
+    <button (click)="infoClick()">Info</button>
 </div>

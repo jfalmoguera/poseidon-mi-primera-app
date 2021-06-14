@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { Usuario } from '../models/usuario';
 
 
 @Component({
@@ -8,9 +9,8 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 })
 export class UsuarioComponent implements OnInit {
 
-  @Input() nombre: string = 'Jose';
-  @Input() apellidos: string = 'Almoguera';
-  @Input() email: string = 'jalmoguera@bravent.net';
+
+  @Input() usuario: Usuario | null = null
 
   @Output() info = new EventEmitter<string>();
 
@@ -22,7 +22,9 @@ export class UsuarioComponent implements OnInit {
 
 
   infoClick(): void {
-    console.log(`${this.nombre} ${this.apellidos}`);
-    this.info.emit(`${this.nombre} ${this.apellidos}`);
+    if (this.usuario) {
+      console.log(`${this.usuario.nombre} ${this.usuario.apellidos}`);
+      this.info.emit(`${this.usuario.nombre} ${this.usuario.apellidos}`);
+    }
   }
 }

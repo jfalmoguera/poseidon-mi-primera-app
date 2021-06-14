@@ -11,11 +11,6 @@
     <h1>
         Listado de usuarios como tarjetas
     </h1>
-    <app-usuario 
-    (info)="mostrarInfo($event)"
-    [nombre]="item.nombre" 
-    [apellidos]="item.apellidos" 
-    [email]="item.email" 
-    *ngFor="let item of usuarios"></app-usuario>
+    <app-usuario [usuario]="item" *ngFor="let item of usuarios"></app-usuario>
     <h1>El usuario ha seleccionado el "usuario" con nombre {{ nombreUsuarioSeleccionado }}</h1>
 </div>
