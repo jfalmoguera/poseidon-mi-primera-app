@@ -9,6 +9,7 @@ import { LineaComponent } from './linea/linea.component';
 import { SumaComponent } from './suma/suma.component';
 import { ContadorComponent } from './contador/contador.component';
 import { Contador2Component } from './contador2/contador2.component';
+import { Contador3Component } from './contador3/contador3.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { Contador2Component } from './contador2/contador2.component';
     LineaComponent,
     SumaComponent,
     ContadorComponent,
-    Contador2Component
+    Contador2Component,
+    Contador3Component
   ],
   imports: [
     BrowserModule
